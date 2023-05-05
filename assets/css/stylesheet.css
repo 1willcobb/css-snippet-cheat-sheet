@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(208, 255, 239);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --border-color:rgb(134, 254, 214);
+    --placerholder-borders: .1rem solid black;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, section, footer {
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+footer {
+    flex: 1;
+    position: bottom;
+    bottom: 0;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.snip-block {
+    flex: 1 0 100px;
+    align-items: center;
+    border: var(--placerholder-borders);
+    margin: .2rem;
+    box-shadow: 2px 2px 6px black;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: .1rem;
+}
+
+.snip-block > * {
+    text-align: center;
+    margin: .2rem;
+    
+}
+
+.snip-title {
+    z-index: 2;
+    background-color: aquamarine;
+    margin: .2rem;
+    border: var(--placerholder-borders);
+    border-radius: 15px;
+    padding: .1rem;
+    margin-top: -10px;
+}
+
+
+.snip-descript {
+    margin: .2rem;
+    border-radius: 15px;
+    padding: .1rem;
+}
+
+.code-snip {
+    margin: .2rem;
+    border: var(--placerholder-borders);
+    border-radius: 15px;
+    padding: .1rem;
+    transition: .2s;
+}
+
+.code-snip:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+pre {
+    margin: .2rem;
+    text-align: left;
+    user-select: all;
+}
+
+@media screen and (min-width: 778px){
+
+}
+    
